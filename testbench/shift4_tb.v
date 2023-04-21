@@ -6,11 +6,11 @@ module Shift4_tb;
   localparam size = 4;
 
   // Ports
-  reg clk = 1;
-  reg areset = 0;
-  reg load = 1;
-  reg ena = 0;
-  reg [size - 1:0] data = 4'b1111;
+  reg               clk;
+  reg               areset;
+  reg               load;
+  reg               ena;
+  reg  [size - 1:0] data;
   wire [size - 1:0] q;
 
   Shift4 #(
@@ -24,14 +24,24 @@ module Shift4_tb;
       .q(q)
   );
 
+
   initial begin
     $dumpfile("shift_wave.vcd");
     $dumpvars;
     begin
-      #10 load = 0;
+      clk = 1;
+      areset = 0;
+      load = 1;
+      ena = 0;
+      data = 4'b1111;
+    end
+    begin
+      #9 load = 0;
       data = 'x;
-      #10 ena = 1; #20 ena = 0;
-      #55 areset = 1; #15 areset = 0;
+      #10 ena = 1;
+      #20 ena = 0;
+      #55 areset = 1;
+      #15 areset = 0;
       #50;
       $finish;
     end
