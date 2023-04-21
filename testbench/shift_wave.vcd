@@ -1,0 +1,112 @@
+$date
+	Sat Apr 22 01:15:58 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Shift4_tb $end
+$var wire 4 ! q [3:0] $end
+$var reg 1 " areset $end
+$var reg 1 # clk $end
+$var reg 4 $ data [3:0] $end
+$var reg 1 % ena $end
+$var reg 1 & load $end
+$scope module Shift4_dut $end
+$var wire 1 " areset $end
+$var wire 1 # clk $end
+$var wire 4 ' data [3:0] $end
+$var wire 1 % ena $end
+$var wire 1 & load $end
+$var reg 4 ( q [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+0&
+0%
+bx $
+0#
+0"
+bx !
+$end
+#5
+1#
+#10
+b0 !
+b0 (
+0#
+1"
+#15
+1#
+0"
+#20
+0#
+b1111 $
+b1111 '
+#25
+1#
+1%
+#30
+0#
+1&
+#35
+b1111 !
+b1111 (
+1#
+#40
+0#
+0&
+#45
+b111 !
+b111 (
+1#
+#50
+0#
+#55
+b11 !
+b11 (
+1#
+#60
+0#
+#65
+b1 !
+b1 (
+1#
+#70
+0#
+#75
+b0 !
+b0 (
+1#
+#80
+0#
+#85
+1#
+#90
+0#
+#95
+1#
+#100
+0#
+#105
+1#
+#110
+0#
+#115
+1#
+#120
+0#
+#125
+1#
+#130
+0#
+#135
+1#
+#140
+0#
